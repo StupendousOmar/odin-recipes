@@ -1,0 +1,25 @@
+/* --------------- main page --------------- */
+* {
+    color: darkred;
+}
+
+body.main, body.mac{
+    background-color: blanchedalmond;
+}
+
+h1.main {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#links li {
+    text-align: center;
+    font-size: 25px;
+}
+
+img#mac {
+    width: 505px;
+    height: auto;
+    text-align: left;
+}
