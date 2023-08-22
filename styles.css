@@ -1,16 +1,5 @@
-/* --------------- main page --------------- */
 * {
     color: darkred;
-}
-
-body.main, body.mac{
-    background-color: blanchedalmond;
-}
-
-h1.main {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 600;
 }
 
 #links li {
@@ -18,8 +7,45 @@ h1.main {
     font-size: 25px;
 }
 
-img#mac {
-    width: 505px;
+body.main, body.mac, body.meatloaf, body.pizza {
+    background-color: blanchedalmond;
+}
+
+h1.main, div h1.mac, div h1.pizza, div h1.meatloaf {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+div h2.pizza, div h2.mac, div h2.meatloaf {
+    font-size: 40px;
+}
+
+
+/* ------------ IMAGES ------------ */
+img#mac, img#meatloaf {
+    width: 50%;
     height: auto;
-    text-align: left;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+img#pizza {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: block;
+}
+/* ------------ IMAGES ------------ */
+
+
+p#pizza, p#mac, p#meatloaf {
+    font-size: 20px;
+}
+
+div .pizza li, div .mac li, div .meatloaf li{
+    font-size: 20px;
 }
