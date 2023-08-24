@@ -4,6 +4,7 @@
 
 #links li {
     font-size: 25px;
+    list-style: none;
 }
 
 body.main, body.mac, body.meatloaf, body.pizza {
@@ -11,7 +12,7 @@ body.main, body.mac, body.meatloaf, body.pizza {
     margin: 8px;
 }
 
-h1.main, div h1.mac, body h1.pizza, div h1.meatloaf {
+h1.main, body h1.mac, body h1.pizza, body h1.meatloaf {
     text-align: center;
     display: block;
     font-size: 50px;
@@ -29,19 +30,11 @@ div h2.pizza, div h2.mac, div h2.meatloaf {
 
 
 /* ------------ IMAGES ------------ */
-img#mac, img#meatloaf {
-    width: 50%;
-    height: auto;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
 
-img#pizza {
+img#pizza, img#mac, img#meatloaf{
     width: 50%;
     height: auto;
-    border: 5px solid brown;
+    border: 3px solid brown;
 }
 /* ------------ IMAGES ------------ */
 
@@ -58,7 +51,6 @@ div.main#links {
     width: 500px;
     margin: 20px auto;
     padding: 40px;
-    background-color: beige;
 }
 
 div.main #link1, div.main #link2, div.main #link3{
@@ -74,12 +66,15 @@ div.main #link1, div.main #link2, div.main #link3{
 div.container1 {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 10px;
 }
 
-.pizza div.textcontainer {
+.pizza div.textcontainer, .meatloaf div.textcontainer, .mac div.textcontainer {
     display: flex;
     flex-direction: column;
-    border: 5px solid brown;
-    padding: 5px;
+    border: 3px solid brown;
+    padding: 15px;
+    background-color: rgb(252, 184, 157);
+    align-items: space-around;
+    flex-basis: auto;
 }
