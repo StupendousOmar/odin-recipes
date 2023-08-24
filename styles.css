@@ -11,7 +11,7 @@ body.main, body.mac, body.meatloaf, body.pizza {
     margin: 8px;
 }
 
-h1.main, div h1.mac, div h1.pizza, div h1.meatloaf {
+h1.main, div h1.mac, body h1.pizza, div h1.meatloaf {
     text-align: center;
     display: block;
     font-size: 50px;
@@ -40,10 +40,8 @@ img#mac, img#meatloaf {
 
 img#pizza {
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    display: block;
+    height: auto;
+    border: 5px solid brown;
 }
 /* ------------ IMAGES ------------ */
 
@@ -71,4 +69,17 @@ div.main #link1, div.main #link2, div.main #link3{
     margin-bottom: 20px;
     margin-right: 45px;
     background-color: rgb(252, 184, 157);
+}
+
+div.container1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.pizza div.textcontainer {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid brown;
+    padding: 5px;
 }
